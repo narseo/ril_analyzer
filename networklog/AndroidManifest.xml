@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.googlecode.networklog"
+  android:versionCode="21600"
+  android:versionName="2.16.0">
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <application
+    android:label="@string/app_name"
+    android:icon="@drawable/icon"
+    android:theme="@style/Theme.Sherlock.ForceOverflow">
+    <activity android:name="NetworkLog"
+      android:launchMode="singleTask"
+      android:alwaysRetainTaskState="true"
+      android:label="@string/app_name"
+      android:uiOptions="splitActionBarWhenNarrow">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:name="Preferences" />
+    <activity android:name="AppTimelineGraph" />
+    <activity android:name="OverallAppTimelineGraph" />
+    <activity android:name="ErrorDialogActivity"
+      android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <receiver android:name=".BootCompletedReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".PackageMonitorReceiver" >
+      <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH" />
+        <action android:name="android.intent.action.PACKAGE_ADDED" />
+        <action android:name="android.intent.action.PACKAGE_INSTALL" />
+        <data android:scheme="package"/>        
+      </intent-filter>
+    </receiver>    
+    <service android:name=".NetworkLogService"
+      android:label="NetworkLogService" />
+  </application>
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+</manifest>

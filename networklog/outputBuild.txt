@@ -1,0 +1,825 @@
+Buildfile: /Users/Narseo/Desktop/monitor_new/networklog/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: NetworkLog
+  [gettype] Project Type: Application
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/bin
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/gen
+[getlibpath] Library dependencies:
+[getlibpath] 
+[getlibpath] ------------------
+[getlibpath] Ordered libraries:
+
+nodeps:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: library
+  [gettype] Project Type: Android Library
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/gen
+
+nodeps:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: library
+  [gettype] Project Type: Android Library
+
+-pre-clean:
+
+clean:
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin
+   [delete] Deleting directory /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/gen
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: NetworkLog
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for NetworkLog...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/libs
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/bin
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/bin/res
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/gen
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/bin/classes
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for NetworkLog...
+[dependency] Ordered libraries:
+[dependency] /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library
+[dependency] /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: library
+  [gettype] Project Type: Android Library
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for library...
+[gettarget] Project Target:   Android 4.0.3
+[gettarget] API level:        15
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/gen
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/classes
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for library...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 82 source files to /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/classes
+    [javac] Note: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/src/com/actionbarsherlock/app/ActionBar.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+     [echo] Creating library output jar file...
+      [jar] Building jar: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/classes.jar
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res
+   [crunch] To destination dir: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_inverse_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_bottom_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_share_pack_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_share_pack_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_solid_shadow_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_stacked_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ab_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__btn_cab_done_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_bottom_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_top_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__cab_background_top_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__dialog_full_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__dialog_full_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__dialog_full_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__dialog_full_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__dialog_full_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__dialog_full_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_ab_back_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_ab_back_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_ab_back_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_ab_back_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_cab_done_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_cab_done_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_cab_done_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_cab_done_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_moreoverflow_normal_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_share_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__ic_menu_share_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_share_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__ic_menu_share_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_activated_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_activated_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_activated_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_divider_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_divider_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_divider_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_divider_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_divider_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_divider_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_longpressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_longpressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_longpressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__list_selector_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__menu_dropdown_panel_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_bg_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_bg_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_bg_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_bg_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_primary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_primary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_primary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_primary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_secondary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__progress_secondary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_48_inner_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_48_inner_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_48_inner_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_48_outer_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_48_outer_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_48_outer_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__spinner_ab_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-hdpi/abs__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_inverse_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_bottom_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_share_pack_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_share_pack_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_solid_shadow_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_stacked_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ab_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__btn_cab_done_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_bottom_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_top_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__cab_background_top_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__dialog_full_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__dialog_full_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__dialog_full_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__dialog_full_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__dialog_full_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__dialog_full_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_ab_back_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_ab_back_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_ab_back_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_ab_back_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_cab_done_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_cab_done_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_cab_done_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_cab_done_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_moreoverflow_normal_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_share_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__ic_menu_share_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_share_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__ic_menu_share_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_activated_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_activated_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_activated_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_divider_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_divider_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_divider_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_divider_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_divider_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_divider_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_longpressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_longpressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_longpressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__list_selector_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__menu_dropdown_panel_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_bg_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_bg_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_bg_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_bg_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_primary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_primary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_primary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_primary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_secondary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__progress_secondary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_48_inner_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_48_inner_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_48_inner_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_48_outer_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_48_outer_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_48_outer_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__spinner_ab_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-mdpi/abs__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_inverse_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_bottom_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_share_pack_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_solid_shadow_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_solid_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_solid_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_stacked_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_transparent_dark_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ab_transparent_light_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__btn_cab_done_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_bottom_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_top_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__cab_background_top_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__dialog_full_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__dialog_full_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__dialog_full_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__dialog_full_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__dialog_full_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__dialog_full_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_ab_back_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_cab_done_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_moreoverflow_normal_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_dark.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__ic_menu_share_holo_light.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_activated_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_activated_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_activated_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_divider_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_divider_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_divider_holo_light
+   [crunch] .9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_divider_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_longpressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_longpressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_longpressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__list_selector_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__menu_dropdown_panel_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_bg_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_bg_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_primary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_primary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_secondary_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__progress_secondary_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_48_inner_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_48_inner_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_48_inner_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_48_outer_holo.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_48_outer_holo.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_48_outer_holo.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_default_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_disabled_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_focused_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_dark.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__spinner_ab_pressed_holo_light.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/res/drawable-xhdpi/abs__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Crunched 201 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-do-debug:
+     [echo] Library project: do not create apk...
+[propertyfile] Creating new property file: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/build.prop
+
+-post-build:
+
+debug:
+
+nodeps:
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 21.1.0
+ [checkenv] Installed at /Applications/android-sdk-mac_x86
+
+-setup:
+     [echo] Project Name: library
+  [gettype] Project Type: Android Library
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-pre-build:
+
+-build-setup:
+     [echo] Resolving Build Target for library...
+[gettarget] Project Target:   Android 1.6
+[gettarget] API level:        4
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/gen
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/classes
+    [mkdir] Created dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for library...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+[dependency] API<=15: Adding annotations.jar to the classpath.
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 7 source files to /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/classes
+     [echo] Creating library output jar file...
+      [jar] Building jar: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/classes.jar
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res
+   [crunch] To destination di
+   [crunch] r: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_unselected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_unselected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-hdpi/vpi__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_unselected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_unselected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-mdpi/vpi__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-mdpi/vpi__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_selected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_selected_pressed_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_focused_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_unselected_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_holo.9.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png => /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/res/drawable-xhdpi/vpi__tab_unselected_pressed_holo.9.png: 0% size of source)
+   [crunch] Crunched 18 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-do-debug:
+     [echo] Library project: do not create apk...
+[propertyfile] Creating new property file: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/build.prop
+
+-post-build:
+
+debug:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+[renderscript] No RenderScript files to compile.
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+    [javac] Compiling 51 source files to /Users/Narseo/Desktop/monitor_new/networklog/bin/classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: /Users/Narseo/Desktop/monitor_new/networklog/bin/classes
+      [dex] input: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/classes.jar
+      [dex] input: /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/classes.jar
+      [dex] input: /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/libs/android-support-v4.jar
+      [dex] Pre-Dexing /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/bin/classes.jar -> classes-14ed215693d4bfebcbed3fb22c9a822b.jar
+      [dex] Pre-Dexing /Users/Narseo/Desktop/monitor_new/networklog/ActionBarSherlock/library/bin/classes.jar -> classes-cad2d280ebfe99f7687737f81ae8b514.jar
+      [dex] Pre-Dexing /Users/Narseo/Desktop/monitor_new/networklog/ViewPagerIndicator/library/libs/android-support-v4.jar -> android-support-v4-2b91d5e29dadcc5f38514cecc67d3229.jar
+      [dex] Converting compiled files and external libraries into /Users/Narseo/Desktop/monitor_new/networklog/bin/classes.dex...
+       [dx] Merged dex A (219 defs/324.0KiB) with dex B (16 defs/33.0KiB). Result is 235 defs/430.7KiB. Took 0.2s
+       [dx] Merged dex A (235 defs/430.7KiB) with dex B (215 defs/352.1KiB). Result is 450 defs/982.8KiB. Took 0.2s
+       [dx] Merged dex A (450 defs/982.8KiB) with dex B (210 defs/259.0KiB). Result is 660 defs/1631.2KiB. Took 0.2s
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/Narseo/Desktop/monitor_new/networklog/res
+   [crunch] To destination dir: /Users/Narseo/Desktop/monitor_new/networklog/bin/res
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-hdpi/up0_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up0_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up0_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-hdpi/up0_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up0_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up0_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-hdpi/up1_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up1_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up1_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-hdpi/up1_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up1_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-hdpi/up1_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-ldpi/up0_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up0_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up0_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-ldpi/up0_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up0_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up0_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-ldpi/up1_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up1_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up1_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-ldpi/up1_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up1_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-ldpi/up1_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-mdpi/up0_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up0_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up0_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-mdpi/up0_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up0_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up0_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-mdpi/up1_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up1_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up1_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-mdpi/up1_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up1_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-mdpi/up1_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-xhdpi/up0_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up0_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up0_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-xhdpi/up0_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up0_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up0_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-xhdpi/up1_down0.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up1_down0.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up1_down0.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable-xhdpi/up1_down1.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up1_down1.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable-xhdpi/up1_down1.png: 0% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable/android_icon.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/android_icon.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/android_icon.png: 91% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable/icon.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/icon.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/icon.png: 74% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable/linux_icon.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/linux_icon.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/linux_icon.png: 79% size of source)
+   [crunch] Processing image to cache: /Users/Narseo/Desktop/monitor_new/networklog/res/drawable/loading_icon.png => /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/loading_icon.png
+   [crunch]   (processed image to cache entry /Users/Narseo/Desktop/monitor_new/networklog/bin/res/drawable/loading_icon.png: 0% size of source)
+   [crunch] Crunched 20 PNG files to update cache
+
+-package-resources:
+     [aapt] Creating full resource package...
+
+-package:
+[apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+[apkbuilder] Creating NetworkLog-debug-unaligned.apk and signing it with a debug key...
+
+-post-package:
+
+-do-debug:
+ [zipalign] Running zip align on final apk...
+     [echo] Debug Package: /Users/Narseo/Desktop/monitor_new/networklog/bin/NetworkLog-debug.apk
+[propertyfile] Creating new property file: /Users/Narseo/Desktop/monitor_new/networklog/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/bin/build.prop
+[propertyfile] Updating property file: /Users/Narseo/Desktop/monitor_new/networklog/bin/build.prop
+
+-post-build:
+
+debug:
+
+BUILD SUCCESSFUL
+Total time: 29 seconds

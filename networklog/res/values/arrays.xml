@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="presort_method">
+    <item>@string/menu_by_app_id</item>
+    <item>@string/menu_by_name</item>
+  </string-array>
+
+  <string-array name="presort_method_values">
+    <item>UID</item>
+    <item>NAME</item>
+  </string-array>
+
+  <string-array name="sort_method">
+    <item>@string/menu_by_app_id</item>
+    <item>@string/menu_by_name</item>
+    <item>@string/menu_by_throughput</item>
+    <item>@string/menu_by_packets</item>
+    <item>@string/menu_by_bytes</item>
+    <item>@string/menu_by_timestamp</item>
+  </string-array>
+
+  <string-array name="sort_method_values">
+    <item>UID</item>
+    <item>NAME</item>
+    <item>THROUGHPUT</item>
+    <item>PACKETS</item>
+    <item>BYTES</item>
+    <item>TIMESTAMP</item>
+  </string-array>
+
+  <string-array name="clearlog_timerange_entries">
+    <item>@string/range_now</item>
+    <item>@string/range_15min</item>
+    <item>@string/range_1hour</item>
+    <item>@string/range_2hour</item>
+    <item>@string/range_4hour</item>
+    <item>@string/range_8hour</item>
+    <item>@string/range_12hour</item>
+    <item>@string/range_24hour</item>
+    <item>@string/range_2day</item>
+    <item>@string/range_4day</item>
+    <item>@string/range_1week</item>
+    <item>@string/range_2week</item>
+    <item>@string/range_1month</item>
+  </string-array>
+
+  <string-array name="clearlog_timerange_values">
+    <item>0</item>
+    <item>900000</item>
+    <item>3600000</item>
+    <item>7200000</item>
+    <item>14400000</item>
+    <item>28800000</item>
+    <item>43200000</item>
+    <item>86400000</item>
+    <item>172800000</item>
+    <item>345600000</item>
+    <item>604800000</item>
+    <item>1209600000</item>
+    <item>2419200000</item>
+  </string-array>
+
+  <string-array name="history_timerange_entries">
+    <item>@string/range_none</item>
+    <item>@string/range_15min</item>
+    <item>@string/range_1hour</item>
+    <item>@string/range_2hour</item>
+    <item>@string/range_4hour</item>
+    <item>@string/range_8hour</item>
+    <item>@string/range_12hour</item>
+    <item>@string/range_24hour</item>
+    <item>@string/range_2day</item>
+    <item>@string/range_4day</item>
+    <item>@string/range_1week</item>
+    <item>@string/range_2week</item>
+    <item>@string/range_1month</item>
+    <item>@string/range_all</item>
+  </string-array>
+
+  <string-array name="history_timerange_values">
+    <item>0</item>
+    <item>900000</item>
+    <item>3600000</item>
+    <item>7200000</item>
+    <item>14400000</item>
+    <item>28800000</item>
+    <item>43200000</item>
+    <item>86400000</item>
+    <item>172800000</item>
+    <item>345600000</item>
+    <item>604800000</item>
+    <item>1209600000</item>
+    <item>2419200000</item>
+    <item>-1</item>
+  </string-array>
+
+  <string-array name="interval_entries">
+    <item>@string/range_1ms</item>
+    <item>@string/range_100ms</item>
+    <item>@string/range_500ms</item>
+    <item>@string/range_1sec</item>
+    <item>@string/range_30sec</item>
+    <item>@string/range_1min</item>
+    <item>@string/range_5min</item>
+    <item>@string/range_10min</item>
+    <item>@string/range_15min</item>
+    <item>@string/range_30min</item>
+    <item>@string/range_1hour</item>
+    <item>@string/range_2hour</item>
+    <item>@string/range_4hour</item>
+    <item>@string/range_8hour</item>
+    <item>@string/range_16hour</item>
+    <item>@string/range_24hour</item>
+    <item>@string/range_48hour</item>
+  </string-array>
+
+  <string-array name="interval_values">
+    <item>1</item>
+    <item>100</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>30000</item>
+    <item>60000</item>
+    <item>300000</item>
+    <item>600000</item>
+    <item>900000</item>
+    <item>1800000</item>
+    <item>3600000</item>
+    <item>7200000</item>
+    <item>14400000</item>
+    <item>28800000</item>
+    <item>57600000</item>
+    <item>115200000</item>
+    <item>230400000</item>
+  </string-array>
+
+  <string-array name="toast_position_entries">
+    <item>@string/position_top</item>
+    <item>@string/position_bottom</item>
+    <item>@string/position_default</item>
+  </string-array>
+
+  <string-array name="toast_position_values">
+    <item>1</item>
+    <item>2</item>
+    <item>-1</item>
+  </string-array>
+
+  <string-array name="toast_duration_entries">
+    <item>@string/duration_2sec</item>
+    <item>@string/duration_3_5sec</item>
+    <item>@string/duration_7sec</item>
+  </string-array>
+
+  <string-array name="toast_duration_values">
+    <item>2000</item>
+    <item>3500</item>
+    <item>7000</item>
+  </string-array>
+
+  <string-array name="watch_rules_timeout_entries">
+    <item>@string/range_30sec</item>
+    <item>@string/range_1min</item>
+    <item>@string/range_2min</item>
+    <item>@string/range_5min</item>
+    <item>@string/range_15min</item>
+    <item>@string/range_30min</item>
+    <item>@string/range_1hour</item>
+  </string-array>
+
+  <string-array name="watch_rules_timeout_values">
+    <item>30000</item>
+    <item>60000</item>
+    <item>120000</item>
+    <item>300000</item>
+    <item>900000</item>
+    <item>1800000</item>
+    <item>3600000</item>
+  </string-array>
+</resources>

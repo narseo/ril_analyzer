@@ -1,0 +1,2 @@
+/data/iptables -A OUTPUT ! -o lo -j NFLOG --nflog-prefix NL
+/data/iptables  -A INPUT ! -i lo -j NFLOG --nflog-prefix NL

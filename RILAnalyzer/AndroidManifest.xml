@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="cl.narseo.rilLogger"
+      android:versionCode="1"
+      android:versionName="1.0"
+      android:sharedUserId="android.uid.phone">
+    <uses-sdk android:minSdkVersion="10" />
+
+    <protected-broadcast android:name="android.intent.action.SERVICE_STATE" />
+    <protected-broadcast android:name="android.intent.action.RADIO_TECHNOLOGY" />
+    <protected-broadcast android:name="android.intent.action.EMERGENCY_CALLBACK_MODE_CHANGED" />
+    <protected-broadcast android:name="android.intent.action.SIG_STR" />
+    <protected-broadcast android:name="android.intent.action.ANY_DATA_STATE" />
+    <protected-broadcast android:name="android.intent.action.DATA_CONNECTION_FAILED" />
+    <protected-broadcast android:name="android.intent.action.SIM_STATE_CHANGED" />
+    <protected-broadcast android:name="android.intent.action.NETWORK_SET_TIME" />
+    <protected-broadcast android:name="android.intent.action.NETWORK_SET_TIMEZONE" />
+    <protected-broadcast android:name="android.intent.action.ACTION_SHOW_NOTICE_ECM_BLOCK_OTHERS" />
+    <protected-broadcast android:name="android.intent.action.ACTION_MDN_STATE_CHANGED" />
+    <protected-broadcast android:name="android.provider.Telephony.SPN_STRINGS_UPDATED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.USE_SIP" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- This tells the activity manager to not delay any of our activity
+         start requests, even if they happen immediately after the user
+         presses home. -->
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES" />
+
+    <application android:label="@string/app_name"
+		android:process="com.android.phone" >
+        <service android:name=".RILMonitorService.java"
+                  android:label="RILMonitorService.java"
+                  android:process="com.android.phone" 
+                 android:persistent="true"/>
+
+        <receiver android:name=".SecretBroadcastReceiver"
+            android:process="com.android.phone"
+			android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+	        <intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </receiver>
+        <receiver android:name=".ExecuteReceiver"
+            android:process="com.android.phone"
+            android:permission="android.permission.WRITE_SECURE_SETTINGS">
+            <intent-filter>
+                <action android:name="com.cyanogenmod.SamsungServiceMode.EXECUTE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

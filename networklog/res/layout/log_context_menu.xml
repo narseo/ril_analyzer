@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/log_copy_src_ip"
+    android:title="@string/copy_src_ip"/>
+  <item android:id="@+id/log_copy_dst_ip"
+    android:title="@string/copy_dst_ip"/>
+  <item android:id="@+id/log_graph"
+    android:title="@string/show_graph"/>
+</menu>

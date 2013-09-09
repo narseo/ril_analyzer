@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:paddingLeft="6dp"
+  android:paddingRight="6dp">
+
+  <TextView
+    android:id="@+id/filterInstructions"
+    android:text="@string/filter_instructions"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" />
+
+  <ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@android:drawable/divider_horizontal_dark"
+    android:id="@+id/line1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp" 
+    android:layout_below="@id/filterInstructions" />
+
+  <ScrollView 
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@id/line1">
+
+    <RelativeLayout
+      android:id="@+id/rel1"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@id/scroll">
+
+      <TextView
+        android:id="@+id/labelFilterInclude"
+        android:text="@string/filter_include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/rel1" />
+
+      <EditText
+        android:id="@+id/filterTextInclude"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelFilterInclude" />
+
+      <TextView
+        android:id="@+id/labelAppliesInclude"
+        android:text="@string/filter_applies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/filterTextInclude" />
+
+      <CheckBox
+        android:id="@+id/filterUidInclude"
+        android:text="@string/filter_app_ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelAppliesInclude" />
+
+      <CheckBox
+        android:id="@+id/filterAddressInclude" 
+        android:text="@string/filter_addresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterUidInclude" />
+
+      <CheckBox
+        android:id="@+id/filterInterfaceInclude"
+        android:text="@string/filter_interfaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterAddressInclude" />
+
+      <CheckBox
+        android:id="@+id/filterPortInclude"
+        android:text="@string/filter_ports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterAddressInclude"
+        android:layout_toRightOf="@id/filterAddressInclude"
+        android:layout_alignBottom="@id/filterAddressInclude" />
+
+      <CheckBox
+        android:id="@+id/filterNameInclude"
+        android:text="@string/filter_app_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterUidInclude"
+        android:layout_toRightOf="@id/filterUidInclude"
+        android:layout_alignLeft="@id/filterPortInclude"
+        android:layout_alignBottom="@id/filterUidInclude" />
+
+      <CheckBox
+        android:id="@+id/filterProtocolInclude"
+        android:text="@string/filter_protocols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterInterfaceInclude"
+        android:layout_toRightOf="@id/filterInterfaceInclude"
+        android:layout_alignLeft="@id/filterPortInclude"
+        android_layout_alignBottom="@id/filterInterfaceInclude" />
+
+      <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@android:drawable/divider_horizontal_dark"
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp" 
+        android:layout_below="@id/filterInterfaceInclude" />
+
+      <TextView
+        android:id="@+id/labelFilterExclude"
+        android:text="@string/filter_exclude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2" />
+
+      <EditText
+        android:id="@+id/filterTextExclude"
+        android:singleLine="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelFilterExclude" />
+
+      <TextView
+        android:id="@+id/labelAppliesExclude"
+        android:text="@string/filter_applies"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/filterTextExclude" />
+
+      <CheckBox
+        android:id="@+id/filterUidExclude"
+        android:text="@string/filter_app_ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelAppliesExclude" />
+
+      <CheckBox
+        android:id="@+id/filterAddressExclude" 
+        android:text="@string/filter_addresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterUidExclude" />
+
+      <CheckBox
+        android:id="@+id/filterInterfaceExclude"
+        android:text="@string/filter_interfaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterAddressExclude" />
+
+      <CheckBox
+        android:id="@+id/filterPortExclude"
+        android:text="@string/filter_ports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterAddressExclude"
+        android:layout_toRightOf="@id/filterAddressExclude"
+        android:layout_alignBottom="@id/filterAddressExclude" />
+
+      <CheckBox
+        android:id="@+id/filterNameExclude"
+        android:text="@string/filter_app_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterUidExclude"
+        android:layout_toRightOf="@id/filterUidExclude"
+        android:layout_alignLeft="@id/filterPortExclude"
+        android:layout_alignBottom="@id/filterUidExclude" />
+
+      <CheckBox
+        android:id="@+id/filterProtocolExclude"
+        android:text="@string/filter_protocols"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/filterInterfaceExclude"
+        android:layout_toRightOf="@id/filterInterfaceExclude"
+        android:layout_alignLeft="@id/filterPortExclude"
+        android_layout_alignBottom="@id/filterInterfaceExclude" />
+    </RelativeLayout>
+  </ScrollView>
+</RelativeLayout>
