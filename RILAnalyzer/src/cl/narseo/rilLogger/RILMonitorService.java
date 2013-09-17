@@ -38,9 +38,9 @@ public class RILMonitorService extends Service {
     private static String PREV_REPORT = "-1";
     private static boolean PREV_SCREEN_STATE = false; 
 
-  	private ScreenReceiver mScreenReceiver = null;
-  	private static boolean radioIsOff = false;
-  	private static String PREV_RRC = "INITIAL";
+    private ScreenReceiver mScreenReceiver = null;
+    private static boolean radioIsOff = false;
+    private static String PREV_RRC = "INITIAL";
 
     public static final String EXTRA_SECRET_CODE = "secret_code";
 
@@ -57,8 +57,8 @@ public class RILMonitorService extends Service {
     private int mCurrentModeType;
     private boolean DEBUG = false;	
 	
-	//Used to get type of network connectivity (GSM/3GPP Standard)
-	private TelephonyManager mTelephonyManager;
+    //Used to get type of network connectivity (GSM/3GPP Standard)
+    private TelephonyManager mTelephonyManager;
 
 
     // Disable back when initialized with certain commands due to crash
@@ -66,13 +66,13 @@ public class RILMonitorService extends Service {
     private boolean mFirstRun = true;
     private String mFirstPageHead;
 
-  	private final IBinder mBinder = new MyBinder();
+    private final IBinder mBinder = new MyBinder();
 
-	// Used to communicate with the logger
-	private DatagramSocket loggerClientSocket;
-	private byte[] loggerBuffer = new byte[1024];
+    // Used to communicate with the logger
+    private DatagramSocket loggerClientSocket;
+    private byte[] loggerBuffer = new byte[1024];
     private InetAddress loggerIPAddress;
-	private static final int LOGGER_UDP_PORT = 9930;
+    private static final int LOGGER_UDP_PORT = 9930;
 
 
     private Phone mPhone;
@@ -104,7 +104,7 @@ public class RILMonitorService extends Service {
 		}
 	}
 
-  /*
+  	/*
 	* Sends UDP socket to logger server on a given port defined by LOGGER_UDP_PORT
 	*/
 	private void rncLogger (String data){
@@ -280,7 +280,7 @@ public class RILMonitorService extends Service {
 	*/
 	private boolean isAirplaneModeOn() {
 	   return Settings.System.getInt(this.getContentResolver(),
-		       Settings.System.AIRPLANE_MODE_ON, 0) != 0;
+		     	Settings.System.AIRPLANE_MODE_ON, 0) != 0;
 	}
 
 	/**
@@ -309,7 +309,7 @@ public class RILMonitorService extends Service {
      */
     @Override
     public void onStart(Intent intent, int startId) {
-		if (DEBUG) Log.i(TAG, "onStart()");
+	if (DEBUG) Log.i(TAG, "onStart()");
         int modeType = OemCommands.OEM_SM_TYPE_MONITOR;
         int subType = OemCommands.OEM_SM_TYPE_SUB_ENTER;		
         enterServiceMode(modeType, subType);
@@ -318,7 +318,7 @@ public class RILMonitorService extends Service {
 	public void onCreate(){
 		if (DEBUG) Log.i(TAG, "OnCreate(). Attempting to get default phone");
 		//PhoneFactory.makeDefaultPhone(this);
-        if (mPhone==null) {
+        	if (mPhone==null) {
 			Log.i(TAG, "Phone is not created. Creating a new one");
 			mPhone = PhoneFactory.getDefaultPhone();
 		}
@@ -327,7 +327,7 @@ public class RILMonitorService extends Service {
 
 		try{
 			loggerClientSocket = new DatagramSocket();
-    		loggerIPAddress = InetAddress.getByName("localhost");
+    			loggerIPAddress = InetAddress.getByName("localhost");
 		}
 		catch(Exception e){
 			Log.e(TAG, "ERROR Creating socket for logging: "+e.getMessage());
@@ -378,14 +378,4 @@ public class RILMonitorService extends Service {
         Message msg = mHandler.obtainMessage(id);
         mPhone.invokeOemRilRequestRaw(data, msg);
     }
-
-    private void sendRequest(byte[] data, int id) {
-	String dataToSend = new String(data);
-	if (DEBUG) 
-          Log.i(TAG, "sendRequest. ID:"+id+"/ data: "+dataToSend+"/ DATA Format2: "+Arrays.toString(data));
-		
-        Message msg = mHandler.obtainMessage(id);
-        mPhone.invokeOemRilRequestRaw(data, msg);
-    }
-
 }
