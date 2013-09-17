@@ -343,7 +343,7 @@ public class RILMonitorService extends Service {
 	* Calls the Ril
 	*/
     private void enterServiceMode(int modeType, int subType) {
-		Log.i(TAG, "Call RIL. ModeType: "+modeType+" / subType: "+subType);
+	if(DEBUG) Log.i(TAG, "Call RIL. ModeType: "+modeType+" / subType: "+subType);
         mCurrentSvcMode = OemCommands.OEM_SM_ENTER_MODE_MESSAGE;
         mCurrentModeType = modeType;
         byte[] data = OemCommands.getEnterServiceModeData(modeType, subType, OemCommands.OEM_SM_ACTION);
@@ -351,16 +351,37 @@ public class RILMonitorService extends Service {
     }
 
     private void sendString(String str) {
-		if (DEBUG) Log.i(TAG, "sendString: "+str);
+	if (DEBUG) Log.i(TAG, "sendString: "+str);
         for (char chr : str.toCharArray()) {
             sendChar(chr);
         }
         sendChar((char) 83); // End
     }
+    
+    private void sendChar(char chr) {
+	if (DEBUG) Log.i(TAG, "sendChar: "+chr);
+        mCurrentSvcMode = OemCommands.OEM_SM_PROCESS_KEY_MESSAGE;
+        mHandler.removeMessages(ID_SERVICE_MODE_REFRESH);
+        if (chr >= 'a' && chr <= 'f') {
+            chr = Character.toUpperCase(chr);
+        } else if (chr == '-') {
+            chr = '*';
+        }
+        byte[] data = OemCommands.getPressKeyData(chr, OemCommands.OEM_SM_ACTION);
+        sendRequest(data, ID_SERVICE_MODE_REQUEST);
+    }
 
     private void sendRequest(byte[] data, int id) {
-	  	  String dataToSend = new String(data);
-		    if (DEBUG) 
+	String dataToSend = new String(data);
+	if (DEBUG) Log.i(TAG, "sendRequest. ID:"+id+"/ data: "+dataToSend+"/ DATA Format2: "+Arrays.toString(data));
+
+        Message msg = mHandler.obtainMessage(id);
+        mPhone.invokeOemRilRequestRaw(data, msg);
+    }
+
+    private void sendRequest(byte[] data, int id) {
+	String dataToSend = new String(data);
+	if (DEBUG) 
           Log.i(TAG, "sendRequest. ID:"+id+"/ data: "+dataToSend+"/ DATA Format2: "+Arrays.toString(data));
 		
         Message msg = mHandler.obtainMessage(id);
