@@ -20,9 +20,9 @@ public class SecretBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 		String code = "0011";
-		Intent i = new Intent(context, SamsungServiceModeActivity.class);
+		Intent i = new Intent(context, RILMonitorService.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        i.putExtra(SamsungServiceModeActivity.EXTRA_SECRET_CODE, code);
+        i.putExtra(RILMonitorService.EXTRA_SECRET_CODE, code);
 
 		Log.i(TAG,"StartService: "+i.toString()+" with code "+code);
 		context.startService(i);
