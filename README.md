@@ -65,6 +65,7 @@ $adb shell mount -o rw,remount /system
 $adb shell rm /system/app/SamsungServiceMode.apk
 $adb shell mount -o ro,remount /system
 
+To build rilanalyzr.apk, you need to import android's framework.jar
 
 Build logger process using Android NDK (with the right target). It is required for storing RNC events on /sdcard/. To install, move the binary to /system/ so it is automatically launched on boot:
 
